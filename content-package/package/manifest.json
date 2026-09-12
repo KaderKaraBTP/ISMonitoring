@@ -2,10 +2,14 @@
 	"sap.package": {
 		"id": "olymel.sac.dash",
 		"packageVersion": {
-			"version": "1.1.1",
+			"version": "1.1.2",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
+		"supportedLocales": [
+			"en"
+		],
+		"fallbackLocale": "en",
 		"icon": "sap-icon://bar-chart",
 		"title": "{{PACKAGE_TITLE}}",
 		"subTitle": "{{PACKAGE_SUBTITLE}}",
@@ -41,6 +45,10 @@
 						"id": "cards.sac.dashboard1",
 						"type": "card",
 						"i18n": "i18n/i18n.properties",
+						"supportedLocales": [
+							"en"
+						],
+						"fallbackLocale": "en",
 						"title": "{{TITLE}}",
 						"subTitle": "{{SUBTITLE}}",
 						"shortTitle": "{{SHORTTITLE}}",
@@ -66,6 +74,10 @@
 						"id": "cards.sac.dashboard2",
 						"type": "card",
 						"i18n": "i18n/i18n.properties",
+						"supportedLocales": [
+							"en"
+						],
+						"fallbackLocale": "en",
 						"title": "{{TITLE}}",
 						"subTitle": "{{SUBTITLE}}",
 						"shortTitle": "{{SHORTTITLE}}",
@@ -112,6 +124,10 @@
 									"id": "cards.sac.dashboard1",
 									"type": "card",
 									"i18n": "i18n/i18n.properties",
+									"supportedLocales": [
+										"en"
+									],
+									"fallbackLocale": "en",
 									"title": "{{TITLE}}",
 									"subTitle": "{{SUBTITLE}}",
 									"applicationVersion": {
@@ -204,6 +220,10 @@
 									"id": "cards.sac.dashboard2",
 									"type": "card",
 									"i18n": "i18n/i18n.properties",
+									"supportedLocales": [
+										"en"
+									],
+									"fallbackLocale": "en",
 									"title": "{{TITLE}}",
 									"subTitle": "{{SUBTITLE}}",
 									"applicationVersion": {

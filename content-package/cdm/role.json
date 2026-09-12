@@ -7,6 +7,12 @@
     "entityType": "role"
   },
   "payload": {
+    "roles": [
+      {
+        "id": "SAC_Dashboards_Viewer",
+        "type": "role"
+      }
+    ],
     "spaces": [
       { "id": "space_sac_dashboards" }
     ],

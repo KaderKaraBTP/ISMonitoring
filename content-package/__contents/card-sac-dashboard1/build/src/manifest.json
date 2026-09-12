@@ -4,6 +4,8 @@
 		"id": "cards.sac.dashboard1",
 		"type": "card",
 		"i18n": "i18n/i18n.properties",
+        "supportedLocales": ["en"],
+        "fallbackLocale": "en",			
 		"title": "{{TITLE}}",
 		"subTitle": "{{SUBTITLE}}",
 		"applicationVersion": {
