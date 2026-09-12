@@ -7,6 +7,9 @@
     "entityType": "role"
   },
   "payload": {
+    "spaces": [
+      { "id": "space_sac_dashboards" }
+    ],
     "apps": [
       { "id": "cards.sac.dashboard1.app" },
       { "id": "cards.sac.dashboard2.app" }
