@@ -1,0 +1,15 @@
+{
+  "_version": "3.2.0",
+  "identification": {
+    "id": "sac_dashboards_role",
+    "title": "{{role_title}}",
+    "description": "{{role_description}}",
+    "entityType": "role"
+  },
+  "payload": {
+    "apps": [
+      { "id": "cards.sac.dashboard1.app" },
+      { "id": "cards.sac.dashboard2.app" }
+    ]
+  }
+}

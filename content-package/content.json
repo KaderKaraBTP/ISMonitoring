@@ -1,0 +1,50 @@
+{
+  "card-sac-dashboard1": {
+    "type": "card",
+    "src": {
+      "from": "../card-sac-dashboard-1",
+      "path": "./",
+      "build": "npm i && npm run-script build",
+      "package": "company.wz.card.sacdashboard1.zip",
+      "manifest": "src/manifest.json"
+    }
+  },
+  "card-sac-dashboard2": {
+    "type": "card",
+    "src": {
+      "from": "../card-sac-dashboard-2",
+      "path": "./",
+      "build": "npm i && npm run-script build",
+      "package": "company.wz.card.sacdashboard2.zip",
+      "manifest": "src/manifest.json"
+    }
+  },
+  "role-sac-dashboards": {
+    "type": "role",
+    "src": {
+      "from": "cdm",
+      "content": "role.json"
+    }
+  },
+  "space-sac-dashboards": {
+    "type": "space",
+    "src": {
+      "from": "cdm/spaces",
+      "content": "sac-dashboards.json"
+    }
+  },
+  "page-sac-dashboard1": {
+    "type": "workpage",
+    "src": {
+      "from": "cdm/pages",
+      "content": "dashboard1.json"
+    }
+  },
+  "page-sac-dashboard2": {
+    "type": "workpage",
+    "src": {
+      "from": "cdm/pages",
+      "content": "dashboard2.json"
+    }
+  }
+}

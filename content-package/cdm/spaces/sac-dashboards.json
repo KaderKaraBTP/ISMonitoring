@@ -1,0 +1,17 @@
+{
+  "_version": "3.1.0",
+  "identification": {
+    "id": "space_sac_dashboards",
+    "title": "Integration Suite SAC Dashboards",
+    "entityType": "space"
+  },
+  "payload": {
+    "spaceConfig": {
+      "sortNumber": 100
+    },
+    "contentNodes": [
+      { "type": "workpage", "id": "page_sac_dashboard1" },
+      { "type": "workpage", "id": "page_sac_dashboard2" }
+    ]
+  }
+}

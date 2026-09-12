@@ -1,0 +1,39 @@
+{
+  "_version": "3.2.0",
+  "identification": {
+    "id": "page_sac_dashboard1",
+    "entityType": "workpage"
+  },
+  "payload": {
+    "workpageConfig": {
+      "title": "CPI Dashboard"
+    },
+    "rows": [
+      {
+        "id": "page_sac_dashboard1-1",
+        "rowConfig": {},
+        "columns": [
+          {
+            "id": "page_sac_dashboard1-11",
+            "columnConfig": { "columnWidth": 24 },
+            "cells": [
+              {
+                "id": "page_sac_dashboard1-111",
+                "cellConfig": {},
+                "widgets": [
+                  {
+                    "id": "page_sac_dashboard1-1111",
+                    "viz": {
+                      "appId": "cards.sac.dashboard1.app",
+                      "vizId": "cards.sac.dashboard1.viz"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
