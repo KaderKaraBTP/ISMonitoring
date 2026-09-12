@@ -1,6 +1,6 @@
 {
 	"sap.package": {
-		"id": "company.wz.cpkg.sacdashboards",
+		"id": "olymel.sac.dash",
 		"packageVersion": {
 			"version": "1.0.0",
 			"upgradeNotification": "all"

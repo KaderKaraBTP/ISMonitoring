@@ -1,0 +1,440 @@
+{
+	"sap.package": {
+		"id": "olymel.sac.dash",
+		"packageVersion": {
+			"version": "1.0.0",
+			"upgradeNotification": "all"
+		},
+		"i18n": "i18n/i18n.properties",
+		"icon": "sap-icon://bar-chart",
+		"title": "{{PACKAGE_TITLE}}",
+		"subTitle": "{{PACKAGE_SUBTITLE}}",
+		"shortTitle": "{{PACKAGE_SHORTTITLE}}",
+		"info": "{{PACKAGE_INFO}}",
+		"description": "{{PACKAGE_DESCRIPTION}}",
+		"tags": {
+			"keywords": [
+				"{{PACKAGE_KEYWORD1}}",
+				"{{PACKAGE_KEYWORD2}}"
+			]
+		},
+		"products": "",
+		"categories": "",
+		"scope": "external",
+		"license": {
+			"text": "",
+			"url": ""
+		},
+		"homepage": {
+			"text": "",
+			"url": "https://www.sap.com"
+		},
+		"support": {
+			"url": "https://support.sap.com"
+		},
+		"contents": [
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "cards.sac.dashboard1",
+						"type": "card",
+						"i18n": "i18n/i18n.properties",
+						"title": "{{TITLE}}",
+						"subTitle": "{{SUBTITLE}}",
+						"shortTitle": "{{SHORTTITLE}}",
+						"info": "{{INFO}}",
+						"description": "{{DESCRIPTION}}",
+						"tags": {
+							"keywords": [
+								"{{KEYWORD1}}"
+							]
+						},
+						"artifactVersion": {
+							"version": "1.0.0"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-sac-dashboard1"
+			},
+			{
+				"manifest": {
+					"_version": "1.27.0",
+					"_generator": "cpkg-project-template",
+					"sap.artifact": {
+						"id": "cards.sac.dashboard2",
+						"type": "card",
+						"i18n": "i18n/i18n.properties",
+						"title": "{{TITLE}}",
+						"subTitle": "{{SUBTITLE}}",
+						"shortTitle": "{{SHORTTITLE}}",
+						"info": "{{INFO}}",
+						"description": "{{DESCRIPTION}}",
+						"tags": {
+							"keywords": [
+								"{{KEYWORD1}}"
+							]
+						},
+						"artifactVersion": {
+							"version": "1.0.0"
+						}
+					}
+				},
+				"baseURL": "artifacts/card-sac-dashboard2"
+			}
+		],
+		"documentation": {
+			"url": ""
+		},
+		"consumption": [],
+		"dependencies": {
+			"products": [],
+			"services": []
+		},
+		"destinations": [],
+		"cdmEntities": [
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "cards.sac.dashboard1.app",
+					"title": "{{TITLE}}",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"cards.sac.dashboard1.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.18.0",
+								"sap.app": {
+									"id": "cards.sac.dashboard1",
+									"type": "card",
+									"i18n": "i18n/i18n.properties",
+									"title": "{{TITLE}}",
+									"subTitle": "{{SUBTITLE}}",
+									"applicationVersion": {
+										"version": "1.0.0"
+									},
+									"shortTitle": "{{SHORTTITLE}}",
+									"info": "{{INFO}}",
+									"description": "{{DESCRIPTION}}",
+									"tags": {
+										"keywords": [
+											"{{KEYWORD1}}"
+										]
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									}
+								},
+								"sap.card": {
+									"type": "WebPage",
+									"header": {
+										"title": "{{TITLE}}"
+									},
+									"content": {
+										"src": "{parameters>/SAC_url/value}",
+										"sandbox": "allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-downloads",
+										"minHeight": "50rem"
+									},
+									"configuration": {
+										"parameters": {
+											"SAC_url": {
+												"value": "https://olymel.ca10.analytics.cloud.sap/sap/fpa/ui/bo/story/999FC2F3C63DB0559BEC705419A6E7A5?shellMode=embed&url_api=true&pageBar=disable&view_id=story2",
+												"type": "string",
+												"description": "Embed URL of the SAP Cloud Integration (CPI) SAC story"
+											}
+										}
+									}
+								}
+							},
+							"vizResources": {
+								"artifactId": "cards.sac.dashboard1"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"TITLE": "SAP Cloud Integration (CPI) Dashboard",
+							"SUBTITLE": "CPI Monitoring Overview",
+							"SHORTTITLE": "CPI Dashboard",
+							"INFO": "Embeds the CPI SAC story",
+							"DESCRIPTION": "Displays SAP Cloud Integration KPIs from SAP Analytics Cloud.",
+							"KEYWORD1": "SAC"
+						}
+					},
+					{
+						"locale": "en",
+						"textDictionary": {
+							"TITLE": "Card Template Title",
+							"SUBTITLE": "Card Template Subitle",
+							"SHORTTITLE": "Card Template Short Title",
+							"INFO": "Card Template Info",
+							"DESCRIPTION": "Card Template Description",
+							"KEYWORD1": "Keyword"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "cards.sac.dashboard2.app",
+					"title": "{{TITLE}}",
+					"entityType": "businessapp",
+					"description": "{{description}}"
+				},
+				"payload": {
+					"visualizations": {
+						"cards.sac.dashboard2.viz": {
+							"vizType": "sap.card",
+							"vizConfig": {
+								"_version": "1.18.0",
+								"sap.app": {
+									"id": "cards.sac.dashboard2",
+									"type": "card",
+									"i18n": "i18n/i18n.properties",
+									"title": "{{TITLE}}",
+									"subTitle": "{{SUBTITLE}}",
+									"applicationVersion": {
+										"version": "1.0.0"
+									},
+									"shortTitle": "{{SHORTTITLE}}",
+									"info": "{{INFO}}",
+									"description": "{{DESCRIPTION}}",
+									"tags": {
+										"keywords": [
+											"{{KEYWORD1}}"
+										]
+									}
+								},
+								"sap.ui": {
+									"technology": "UI5",
+									"deviceTypes": {
+										"desktop": true,
+										"phone": true,
+										"tablet": true
+									}
+								},
+								"sap.card": {
+									"type": "WebPage",
+									"header": {
+										"title": "{{TITLE}}"
+									},
+									"content": {
+										"src": "{parameters>/SAC_url/value}",
+										"sandbox": "allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-downloads",
+										"minHeight": "50rem"
+									},
+									"configuration": {
+										"parameters": {
+											"SAC_url": {
+												"value": "https://olymel.ca10.analytics.cloud.sap/sap/fpa/ui/bo/story/81A03F814125C0D47608FEC63F8AF865?shellMode=embed&url_api=true&pageBar=disable&view_id=story2",
+												"type": "string",
+												"description": "Embed URL of the API Management (APIM) SAC story"
+											}
+										}
+									}
+								}
+							},
+							"vizResources": {
+								"artifactId": "cards.sac.dashboard2"
+							}
+						}
+					}
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"TITLE": "API Management (APIM) Dashboard",
+							"SUBTITLE": "APIM Monitoring Overview",
+							"SHORTTITLE": "APIM Dashboard",
+							"INFO": "Embeds the APIM SAC story",
+							"DESCRIPTION": "Displays API Management KPIs from SAP Analytics Cloud.",
+							"KEYWORD1": "SAC"
+						}
+					},
+					{
+						"locale": "en",
+						"textDictionary": {
+							"TITLE": "Card Template Title",
+							"SUBTITLE": "Card Template Subitle",
+							"SHORTTITLE": "Card Template Short Title",
+							"INFO": "Card Template Info",
+							"DESCRIPTION": "Card Template Description",
+							"KEYWORD1": "Keyword"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "sac_dashboards_role",
+					"title": "{{role_title}}",
+					"description": "{{role_description}}",
+					"entityType": "role"
+				},
+				"payload": {
+					"apps": [
+						{
+							"id": "cards.sac.dashboard1.app"
+						},
+						{
+							"id": "cards.sac.dashboard2.app"
+						}
+					]
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"role_title": "SAC Dashboards Viewer",
+							"role_description": "Grants access to the CPI and APIM SAC dashboards in Work Zone"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.1.0",
+				"identification": {
+					"id": "space_sac_dashboards",
+					"title": "Integration Suite SAC Dashboards",
+					"entityType": "space"
+				},
+				"payload": {
+					"spaceConfig": {
+						"sortNumber": 100
+					},
+					"contentNodes": [
+						{
+							"type": "workpage",
+							"id": "page_sac_dashboard1"
+						},
+						{
+							"type": "workpage",
+							"id": "page_sac_dashboard2"
+						}
+					]
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "page_sac_dashboard1",
+					"entityType": "workpage"
+				},
+				"payload": {
+					"workpageConfig": {
+						"title": "CPI Dashboard"
+					},
+					"rows": [
+						{
+							"id": "page_sac_dashboard1-1",
+							"rowConfig": {},
+							"columns": [
+								{
+									"id": "page_sac_dashboard1-11",
+									"columnConfig": {
+										"columnWidth": 24
+									},
+									"cells": [
+										{
+											"id": "page_sac_dashboard1-111",
+											"cellConfig": {},
+											"widgets": [
+												{
+													"id": "page_sac_dashboard1-1111",
+													"viz": {
+														"appId": "cards.sac.dashboard1.app",
+														"vizId": "cards.sac.dashboard1.viz"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			},
+			{
+				"_version": "3.2.0",
+				"identification": {
+					"id": "page_sac_dashboard2",
+					"entityType": "workpage"
+				},
+				"payload": {
+					"workpageConfig": {
+						"title": "APIM Dashboard"
+					},
+					"rows": [
+						{
+							"id": "page_sac_dashboard2-1",
+							"rowConfig": {},
+							"columns": [
+								{
+									"id": "page_sac_dashboard2-11",
+									"columnConfig": {
+										"columnWidth": 24
+									},
+									"cells": [
+										{
+											"id": "page_sac_dashboard2-111",
+											"cellConfig": {},
+											"widgets": [
+												{
+													"id": "page_sac_dashboard2-1111",
+													"viz": {
+														"appId": "cards.sac.dashboard2.app",
+														"vizId": "cards.sac.dashboard2.viz"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"texts": [
+					{
+						"locale": "",
+						"textDictionary": {
+							"description": "Business App Description"
+						}
+					}
+				]
+			}
+		]
+	}
+}
