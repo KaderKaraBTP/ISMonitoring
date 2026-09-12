@@ -1,7 +1,7 @@
 {
   "name": "company-wz-content-package-sacdashboards",
   "description": "Work Zone content package embedding two SAP Analytics Cloud dashboards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "node scripts/build.js",
     "pull": "node scripts/pull.js",
