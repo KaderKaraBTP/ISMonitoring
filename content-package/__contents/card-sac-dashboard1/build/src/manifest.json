@@ -1,0 +1,47 @@
+{
+	"_version": "1.18.0",
+	"sap.app": {
+		"id": "cards.sac.dashboard1",
+		"type": "card",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{TITLE}}",
+		"subTitle": "{{SUBTITLE}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "{{SHORTTITLE}}",
+		"info": "{{INFO}}",
+		"description": "{{DESCRIPTION}}",
+		"tags": {
+			"keywords": ["{{KEYWORD1}}"]
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"phone": true,
+			"tablet": true
+		}
+	},
+	"sap.card": {
+		"type": "WebPage",
+		"header": {
+			"title": "{{TITLE}}"
+		},
+		"content": {
+			"src": "{parameters>/SAC_url/value}",
+			"sandbox": "allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-downloads",
+			"minHeight": "50rem"
+		},
+		"configuration": {
+			"parameters": {
+				"SAC_url": {
+					"value": "https://olymel.ca10.analytics.cloud.sap/sap/fpa/ui/bo/story/999FC2F3C63DB0559BEC705419A6E7A5?shellMode=embed&url_api=true&pageBar=disable&view_id=story2",
+					"type": "string",
+					"description": "Embed URL of the SAP Cloud Integration (CPI) SAC story"
+				}
+			}
+		}
+	}
+}
